@@ -54,22 +54,29 @@ struct MonthlyHoursOfSunshine: Identifiable {
 }
 
 struct Configurable_WidgetEntryView : View {
+    
     var entry: Provider.Entry
     var data: [MonthlyHoursOfSunshine] = [
         MonthlyHoursOfSunshine(month: 1, hoursOfSunshine: 74),
         MonthlyHoursOfSunshine(month: 2, hoursOfSunshine: 80),
         MonthlyHoursOfSunshine(month: 12, hoursOfSunshine: 62)
     ]
+    @AppStorage("pluginDataJSON", store: UserDefaults(suiteName: "group.knowapp")) var name = "hello"
     var body: some View {
-        Chart(data) {
-            LineMark(
-                x: .value("Month", $0.date),
-                y: .value("Hours of Sunshine", $0.hoursOfSunshine)
-            )
-            .foregroundStyle(.blue.opacity(0.5))
+        HStack{
+            Text(name)
+            Chart(data) {
+                LineMark(
+                    x: .value("Month", $0.date),
+                    y: .value("Hours of Sunshine", $0.hoursOfSunshine)
+                )
+                .foregroundStyle(.blue.opacity(0.5))
+            }
         }
         
     }
+    
+    
     
 }
 
@@ -91,4 +98,11 @@ struct Configurable_Widget_Previews: PreviewProvider {
         Configurable_WidgetEntryView(entry: SimpleEntry(date: Date(), configuration: ConfigurationIntent()))
             .previewContext(WidgetPreviewContext(family: .systemMedium))
     }
+}
+
+struct PluginModelDecoded: Identifiable, Codable {
+    let id: String = UUID().uuidString
+    let name: String
+    let queryURL: String
+    let vizualization: Array<String>
 }

@@ -7,9 +7,16 @@
 
 import Foundation
 
-struct PluginModel: Identifiable {
+struct Parameter: Codable {
+    let name: String
+    let required: Bool
+}
+
+struct PluginModel: Identifiable, Codable {
     let id: String = UUID().uuidString
     let name: String
     let queryURL: String
-    let vizualization: Array<String>
+    let vizualization: String
+    let interval: Int
+    let parameters: [Parameter]
 }

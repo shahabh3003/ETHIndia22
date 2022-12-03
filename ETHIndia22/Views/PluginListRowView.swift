@@ -15,7 +15,7 @@ struct PluginListRowView: View {
 }
 
 struct PluginListRowView_Previews: PreviewProvider {
-    static let plugin = PluginModel(name: "Plugin 1", queryURL: "QueryOnThis.com", vizualization: [])
+    static let plugin = PluginModel(name: "Plugin 1", queryURL: "QueryOnThis.com", vizualization: "[]", interval: 0, parameters: [])
     static var previews: some View {
         PluginListRowView(plugin: plugin)
     }

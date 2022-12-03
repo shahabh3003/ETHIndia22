@@ -15,13 +15,18 @@ class PluginListViewModel: ObservableObject {
     
     func getDemoPlugins() -> [PluginModel] {
         let demoPlugins: [PluginModel] = [
-            PluginModel(name: "Plugin-1", queryURL: "example.com", vizualization: []),
-            PluginModel(name: "Plugin-2", queryURL: "not.com", vizualization: [])
+            PluginModel(name: "Plugin-1", queryURL: "example.com", vizualization: "[]", interval: 0, parameters: []),
+            PluginModel(name: "Plugin-2", queryURL: "not.com", vizualization: "[]", interval: 0, parameters: [])
         ]
         return demoPlugins
     }
     
     func addPlugin(plugin: PluginModel) {
         plugins.append(plugin)
+        let userDefaults = UserDefaults(suiteName: "group.knowapp")
+//        let jsonEncoder = JSONEncoder()
+//        let jsonData = try! jsonEncoder.encode(plugin)
+//        let jsonString = String(data: jsonData, encoding: String.Encoding.utf16)
+        userDefaults?.set(plugin.name, forKey: "pluginDataJSON")
     }
 }

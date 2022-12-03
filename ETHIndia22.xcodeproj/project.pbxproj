@@ -24,6 +24,7 @@
 		B2A6E5D7293B53E60067A3F2 /* PluginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A6E5D6293B53E60067A3F2 /* PluginModel.swift */; };
 		B2A6E5D9293B55370067A3F2 /* PluginListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A6E5D8293B55370067A3F2 /* PluginListRowView.swift */; };
 		B2A6E5DC293B5C180067A3F2 /* PluginListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A6E5DB293B5C180067A3F2 /* PluginListViewModel.swift */; };
+		B2A6E5E0293B70CA0067A3F2 /* PluginModelDecoded.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A6E5DF293B70CA0067A3F2 /* PluginModelDecoded.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,9 @@
 		B2A6E5D6293B53E60067A3F2 /* PluginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PluginModel.swift; sourceTree = "<group>"; };
 		B2A6E5D8293B55370067A3F2 /* PluginListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PluginListRowView.swift; sourceTree = "<group>"; };
 		B2A6E5DB293B5C180067A3F2 /* PluginListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PluginListViewModel.swift; sourceTree = "<group>"; };
+		B2A6E5DD293B692A0067A3F2 /* ETHIndia22.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ETHIndia22.entitlements; sourceTree = "<group>"; };
+		B2A6E5DE293B6B680067A3F2 /* Configurable WidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Configurable WidgetExtension.entitlements"; sourceTree = "<group>"; };
+		B2A6E5DF293B70CA0067A3F2 /* PluginModelDecoded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PluginModelDecoded.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,7 @@
 		B2A6E596293B12DA0067A3F2 = {
 			isa = PBXGroup;
 			children = (
+				B2A6E5DE293B6B680067A3F2 /* Configurable WidgetExtension.entitlements */,
 				B2A6E5A1293B12DA0067A3F2 /* ETHIndia22 */,
 				B2A6E5BA293B144D0067A3F2 /* Configurable Widget */,
 				B2A6E5B5293B144D0067A3F2 /* Frameworks */,
@@ -113,6 +118,7 @@
 		B2A6E5A1293B12DA0067A3F2 /* ETHIndia22 */ = {
 			isa = PBXGroup;
 			children = (
+				B2A6E5DD293B692A0067A3F2 /* ETHIndia22.entitlements */,
 				B2A6E5A2293B12DA0067A3F2 /* ETHIndia22App.swift */,
 				B2A6E5DA293B5C030067A3F2 /* ViewModels */,
 				B2A6E5D1293B4F460067A3F2 /* Models */,
@@ -144,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				B2A6E5BB293B144D0067A3F2 /* Configurable_Widget.swift */,
+				B2A6E5DF293B70CA0067A3F2 /* PluginModelDecoded.swift */,
 				B2A6E5BD293B144D0067A3F2 /* Configurable_Widget.intentdefinition */,
 				B2A6E5BE293B14500067A3F2 /* Assets.xcassets */,
 				B2A6E5C0293B14500067A3F2 /* Info.plist */,
@@ -286,6 +293,7 @@
 				B2A6E5D0293B4F010067A3F2 /* PluginAddFormView.swift in Sources */,
 				B2A6E5CD293B451D0067A3F2 /* WidgetListView.swift in Sources */,
 				B2A6E5CB293B446C0067A3F2 /* PluginListView.swift in Sources */,
+				B2A6E5E0293B70CA0067A3F2 /* PluginModelDecoded.swift in Sources */,
 				B2A6E5C2293B14500067A3F2 /* Configurable_Widget.intentdefinition in Sources */,
 				B2A6E5A3293B12DA0067A3F2 /* ETHIndia22App.swift in Sources */,
 				B2A6E5D7293B53E60067A3F2 /* PluginModel.swift in Sources */,
@@ -432,9 +440,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ETHIndia22/ETHIndia22.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ETHIndia22/Preview Content\"";
+				DEVELOPMENT_TEAM = 2KTG83Y4R4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -464,9 +474,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ETHIndia22/ETHIndia22.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ETHIndia22/Preview Content\"";
+				DEVELOPMENT_TEAM = 2KTG83Y4R4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -495,8 +507,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "Configurable WidgetExtension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2KTG83Y4R4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Configurable Widget/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Configurable-Widget";
@@ -521,8 +535,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "Configurable WidgetExtension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2KTG83Y4R4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Configurable Widget/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Configurable-Widget";

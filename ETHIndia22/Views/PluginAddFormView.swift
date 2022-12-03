@@ -8,17 +8,13 @@
 import SwiftUI
 
 struct PluginAddFormView: View {
-    var body: some View {
-        VStack{
-            formElements();
-        }
-    }
-}
-
-struct formElements: View {
+    @EnvironmentObject var pluginListViewModel: PluginListViewModel
     @Environment(\.presentationMode) var presentationMode
     @State var name = "";
     @State var queryURL = "";
+    @State var vizualization = "";
+    @State var paramName = "";
+    @State var interval = 0;
     var body: some View {
         VStack {
             Form {
@@ -27,10 +23,13 @@ struct formElements: View {
                     TextField(/*@START_MENU_TOKEN@*/"Placeholder"/*@END_MENU_TOKEN@*/, text: $name)
                     Text("Query URL").font(.headline)
                     TextField("Enter query URL", text: $queryURL)
-                    Button(action: saveButtonPressed) {
-                        Text("Save")
-                            .buttonStyle(.borderedProminent)
-                    }
+                    Text("Type")
+                    TextField("Enter type of Widget", text: $vizualization)
+                }
+                Section(header: Text("Configure Parameters")){
+                    Text("Enter Parameter Name")
+                    TextField("Param Name", text: $paramName)
+                    Text("")
                 }
                 
             }
@@ -38,13 +37,11 @@ struct formElements: View {
     }
     
     func saveButtonPressed() {
-        @EnvironmentObject var pluginListViewModel: PluginListViewModel
-        let newPlugin = PluginModel(name: name, queryURL: queryURL, vizualization: [])
+        let newPlugin = PluginModel(name: name, queryURL: queryURL, vizualization: vizualization, interval: interval, parameters: [])
         pluginListViewModel.addPlugin(plugin: newPlugin)
         presentationMode.wrappedValue.dismiss()
     }
 }
-
 
 struct PluginAddFormView_Previews: PreviewProvider {
     static var previews: some View {
