@@ -63,15 +63,16 @@ struct ChartDatapoint : Identifiable{
 struct Configurable_WidgetEntryView : View {
     
     var entry: Provider.Entry
+    var viewChange: Bool = false
     var data: Dictionary<String, AnyObject> = Dictionary()
     var graphData: [ChartDatapoint] = []
     @AppStorage("pluginDataJSON", store: UserDefaults(suiteName: "group.knowapp")) var name = "hello"
     init(entry: Provider.Entry){
         self.entry = entry
-        self.data = getDataFromURL(url: "https://pzzra1.deta.dev/widget/dune")
+        self.data = getDataFromURL(url: "http://127.0.0.1:8000/widget/dune")
         if self.data["type"] as! String == "Graph" {
-            var dataPoints = self.data["data"] as! [Int]
-            var timestamps = self.data["timestamp"] as! [String]
+            let dataPoints = self.data["data"] as! [Int]
+            let timestamps = self.data["timestamp"] as! [String]
             let dateFormatter = DateFormatter()
             dateFormatter.dateFormat = "HH':'mm':'ss"
             
@@ -82,35 +83,74 @@ struct Configurable_WidgetEntryView : View {
         }
     }
     var body: some View {
-        HStack{
-            //            Text(name)
+        // populateGraphData()
+        if viewChange {
+            graphView
+        } else {
+            contentView
+        }
+    }
+    
+    var graphView: some View {
+        HStack {
             Chart(graphData) {
-                LineMark(
+                AreaMark(
                     x: .value("Month", $0.x),
                     y: .value("Hours of Sunshine", $0.y)
                 )
-                .foregroundStyle(.blue.opacity(0.5))
-                
-            }.chartXScale()
+                .interpolationMethod(.catmullRom)
+                .foregroundStyle(.linearGradient(Gradient(colors: [.green, Color(red: 0.0, green: 1.0, blue: 0.0, opacity: 0.3)]), startPoint: .center, endPoint: .bottom))
+            }
+            .frame(height: 120)
+            .padding(10)
+            .chartLegend(.automatic)
         }
-        
     }
     
+    var contentView: some View {
+        VStack(alignment: .leading) {
+            Image(systemName: "message").font(.system(size: 20, weight: .heavy)).imageScale(.large)
+            Text("ChainWiz").font(.system(size: 20, weight: .heavy)).imageScale(.large)
+            Text("Marketplace for Web3 projects").font(.system(size: 20, weight: .medium))
+            Text("Click to view our community").font(.system(size: 15, weight: .light))
+        }
+        .foregroundColor(.white)
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(.linearGradient(Gradient(colors: [.green, Color(red: 0.0, green: 1.0, blue: 0.0, opacity: 0.3)]), startPoint: .center, endPoint: .bottom))
+    }
+
+//    func populateGraphData(){
+//        self.data = getDataFromURL(url: "http://127.0.0.1:8000/widget/dune")
+//        if self.data["type"] as! String == "Graph" {
+//            let dataPoints = self.data["data"] as! [Int]
+//            let timestamps = self.data["timestamp"] as! [String]
+//            let dateFormatter = DateFormatter()
+//            dateFormatter.dateFormat = "HH':'mm':'ss"
+//
+//            for i in 0..<dataPoints.count {
+//                let date = dateFormatter.date(from: timestamps[i])
+//                graphData.append(ChartDatapoint(x: date!, y: dataPoints[i]))
+//            }
+//        }
+//    }
     func getDataFromURL(url: String) -> Dictionary<String, AnyObject> {
         var rq = URLRequest(url: URL(string: url)!)
         rq.httpMethod = "GET"
         let session = URLSession.shared
+        var tempData: Data = Data()
         var json: Dictionary<String, AnyObject> = Dictionary()
         let task = session.dataTask(with: rq, completionHandler: {
             data, response, error -> Void in
-            do {
-                json = try JSONSerialization.jsonObject(with: data!) as! Dictionary<String, AnyObject>
-            } catch {
-                print("error")
-            }
+            tempData = data!
         })
         task.resume()
         sleep(1)
+        do{
+            json = try JSONSerialization.jsonObject(with: tempData) as! Dictionary<String, AnyObject>
+        } catch {
+            print("error")
+        }
+        
         return json["data"] as! Dictionary<String, AnyObject>
     }
     

@@ -25,6 +25,7 @@
 		B2A6E5D9293B55370067A3F2 /* PluginListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A6E5D8293B55370067A3F2 /* PluginListRowView.swift */; };
 		B2A6E5DC293B5C180067A3F2 /* PluginListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A6E5DB293B5C180067A3F2 /* PluginListViewModel.swift */; };
 		B2A6E5E0293B70CA0067A3F2 /* PluginModelDecoded.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A6E5DF293B70CA0067A3F2 /* PluginModelDecoded.swift */; };
+		B2A6E5E2293BDB490067A3F2 /* DataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A6E5E1293BDB490067A3F2 /* DataViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		B2A6E5DD293B692A0067A3F2 /* ETHIndia22.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ETHIndia22.entitlements; sourceTree = "<group>"; };
 		B2A6E5DE293B6B680067A3F2 /* Configurable WidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Configurable WidgetExtension.entitlements"; sourceTree = "<group>"; };
 		B2A6E5DF293B70CA0067A3F2 /* PluginModelDecoded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PluginModelDecoded.swift; sourceTree = "<group>"; };
+		B2A6E5E1293BDB490067A3F2 /* DataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 				B2A6E5BD293B144D0067A3F2 /* Configurable_Widget.intentdefinition */,
 				B2A6E5BE293B14500067A3F2 /* Assets.xcassets */,
 				B2A6E5C0293B14500067A3F2 /* Info.plist */,
+				B2A6E5E1293BDB490067A3F2 /* DataViewModel.swift */,
 			);
 			path = "Configurable Widget";
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 				B2A6E5E0293B70CA0067A3F2 /* PluginModelDecoded.swift in Sources */,
 				B2A6E5C2293B14500067A3F2 /* Configurable_Widget.intentdefinition in Sources */,
 				B2A6E5A3293B12DA0067A3F2 /* ETHIndia22App.swift in Sources */,
+				B2A6E5E2293BDB490067A3F2 /* DataViewModel.swift in Sources */,
 				B2A6E5D7293B53E60067A3F2 /* PluginModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
