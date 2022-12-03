@@ -109,14 +109,14 @@ struct Configurable_WidgetEntryView : View {
     
     var contentView: some View {
         VStack(alignment: .leading) {
-            Image(systemName: "message").font(.system(size: 20, weight: .heavy)).imageScale(.large)
+            Image(systemName: "bell").font(.system(size: 20, weight: .heavy)).imageScale(.large)
             Text("ChainWiz").font(.system(size: 20, weight: .heavy)).imageScale(.large)
             Text("Marketplace for Web3 projects").font(.system(size: 20, weight: .medium))
             Text("Click to view our community").font(.system(size: 15, weight: .light))
         }
         .foregroundColor(.white)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(.linearGradient(Gradient(colors: [.green, Color(red: 0.0, green: 1.0, blue: 0.0, opacity: 0.3)]), startPoint: .center, endPoint: .bottom))
+        .background(RadialGradient(gradient: Gradient(colors: [.blue, .black]), center: .center, startRadius: 2, endRadius: 650))
     }
 
 //    func populateGraphData(){
