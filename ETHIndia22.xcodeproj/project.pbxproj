@@ -21,6 +21,9 @@
 		B2A6E5CB293B446C0067A3F2 /* PluginListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A6E5CA293B446C0067A3F2 /* PluginListView.swift */; };
 		B2A6E5CD293B451D0067A3F2 /* WidgetListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A6E5CC293B451D0067A3F2 /* WidgetListView.swift */; };
 		B2A6E5D0293B4F010067A3F2 /* PluginAddFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A6E5CF293B4F010067A3F2 /* PluginAddFormView.swift */; };
+		B2A6E5D7293B53E60067A3F2 /* PluginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A6E5D6293B53E60067A3F2 /* PluginModel.swift */; };
+		B2A6E5D9293B55370067A3F2 /* PluginListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A6E5D8293B55370067A3F2 /* PluginListRowView.swift */; };
+		B2A6E5DC293B5C180067A3F2 /* PluginListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A6E5DB293B5C180067A3F2 /* PluginListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +66,9 @@
 		B2A6E5CA293B446C0067A3F2 /* PluginListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PluginListView.swift; sourceTree = "<group>"; };
 		B2A6E5CC293B451D0067A3F2 /* WidgetListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetListView.swift; sourceTree = "<group>"; };
 		B2A6E5CF293B4F010067A3F2 /* PluginAddFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PluginAddFormView.swift; sourceTree = "<group>"; };
+		B2A6E5D6293B53E60067A3F2 /* PluginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PluginModel.swift; sourceTree = "<group>"; };
+		B2A6E5D8293B55370067A3F2 /* PluginListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PluginListRowView.swift; sourceTree = "<group>"; };
+		B2A6E5DB293B5C180067A3F2 /* PluginListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PluginListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				B2A6E5A2293B12DA0067A3F2 /* ETHIndia22App.swift */,
+				B2A6E5DA293B5C030067A3F2 /* ViewModels */,
 				B2A6E5D1293B4F460067A3F2 /* Models */,
 				B2A6E5CE293B45A40067A3F2 /* Views */,
 				B2A6E5A6293B12DD0067A3F2 /* Assets.xcassets */,
@@ -151,6 +158,7 @@
 				B2A6E5CC293B451D0067A3F2 /* WidgetListView.swift */,
 				B2A6E5CA293B446C0067A3F2 /* PluginListView.swift */,
 				B2A6E5CF293B4F010067A3F2 /* PluginAddFormView.swift */,
+				B2A6E5D8293B55370067A3F2 /* PluginListRowView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -158,8 +166,17 @@
 		B2A6E5D1293B4F460067A3F2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B2A6E5D6293B53E60067A3F2 /* PluginModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		B2A6E5DA293B5C030067A3F2 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B2A6E5DB293B5C180067A3F2 /* PluginListViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,12 +280,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2A6E5D9293B55370067A3F2 /* PluginListRowView.swift in Sources */,
+				B2A6E5DC293B5C180067A3F2 /* PluginListViewModel.swift in Sources */,
 				B2A6E5A5293B12DA0067A3F2 /* ContentView.swift in Sources */,
 				B2A6E5D0293B4F010067A3F2 /* PluginAddFormView.swift in Sources */,
 				B2A6E5CD293B451D0067A3F2 /* WidgetListView.swift in Sources */,
 				B2A6E5CB293B446C0067A3F2 /* PluginListView.swift in Sources */,
 				B2A6E5C2293B14500067A3F2 /* Configurable_Widget.intentdefinition in Sources */,
 				B2A6E5A3293B12DA0067A3F2 /* ETHIndia22App.swift in Sources */,
+				B2A6E5D7293B53E60067A3F2 /* PluginModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

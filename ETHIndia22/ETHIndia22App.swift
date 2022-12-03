@@ -9,10 +9,12 @@ import SwiftUI
 
 @main
 struct ETHIndia22App: App {
+    @StateObject var pluginListViewModel: PluginListViewModel = PluginListViewModel()
+    
     var body: some Scene {
         WindowGroup {
             
-            ContentView()
+            ContentView().environmentObject(pluginListViewModel)
             
         }
     }

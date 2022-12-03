@@ -6,15 +6,15 @@
 //
 
 import SwiftUI
-
+import Foundation
 
 struct PluginListView: View {
-    @State var plugins = ["Dummy Plugin 1", "Dummy Plugin 2"]
+    @EnvironmentObject var pluginListViewModel: PluginListViewModel
     var body: some View {
         NavigationView{
             List {
-                ForEach(plugins, id: \.self) { plugin in
-                    Text(plugin)
+                ForEach(pluginListViewModel.plugins) { plugin in
+                    PluginListRowView(plugin: plugin)
                 }
                 //                    ScrollView {
                 //                        Text("Plugins will appear here!!!")
@@ -51,7 +51,7 @@ struct PluginListView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView{
             PluginListView()
-        }
+        }.environmentObject(PluginListViewModel())
         
     }
 }

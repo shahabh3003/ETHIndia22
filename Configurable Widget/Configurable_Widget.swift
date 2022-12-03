@@ -14,15 +14,15 @@ struct Provider: IntentTimelineProvider {
     func placeholder(in context: Context) -> SimpleEntry {
         SimpleEntry(date: Date(), configuration: ConfigurationIntent())
     }
-
+    
     func getSnapshot(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (SimpleEntry) -> ()) {
         let entry = SimpleEntry(date: Date(), configuration: configuration)
         completion(entry)
     }
-
+    
     func getTimeline(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
         var entries: [SimpleEntry] = []
-
+        
         // Generate a timeline consisting of five entries an hour apart, starting from the current date.
         let currentDate = Date()
         for minuteOffset in 0 ..< 50 {
@@ -30,7 +30,7 @@ struct Provider: IntentTimelineProvider {
             let entry = SimpleEntry(date: entryDate, configuration: configuration)
             entries.append(entry)
         }
-
+        
         let timeline = Timeline(entries: entries, policy: .atEnd)
         completion(timeline)
     }
@@ -62,19 +62,21 @@ struct Configurable_WidgetEntryView : View {
     ]
     var body: some View {
         Chart(data) {
-                LineMark(
-                    x: .value("Month", $0.date),
-                    y: .value("Hours of Sunshine", $0.hoursOfSunshine)
-                )
-                
-            }
+            LineMark(
+                x: .value("Month", $0.date),
+                y: .value("Hours of Sunshine", $0.hoursOfSunshine)
+            )
+            .foregroundStyle(.blue.opacity(0.5))
+        }
+        
     }
+    
 }
 
 @main
 struct Configurable_Widget: Widget {
     let kind: String = "Configurable_Widget"
-
+    
     var body: some WidgetConfiguration {
         IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: Provider()) { entry in
             Configurable_WidgetEntryView(entry: entry)
