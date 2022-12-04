@@ -15,20 +15,14 @@
 # Instructions to run application:
 
 
-1. Create a python 3.7 virtual environment and proceeed with installation there:
-2. Clone this repository cd to folder and install the modules in requirements.txt and run `pip install -r requirements.txt`.
-3. To run this project, Open command prompt type 
-4. `cd Nonagon/api`
-5. Run `python main.py`
-6. You can access the Swagger at http://localhost:8080
-7. `cd ../Dashboard`
-8. Run `python manage.py migrate` first and then `python manage.py runserver`
-9. You Can See The Website Live in  http://localhost:8000/
-10. Create a new account at the sign up page and avail the services.
+1. Download & Install XCode
+2. Git clone this repository
+3. Create a build and run on any IOS simulator
+4. To see widgets in action inoput the query url as the part of plugin configuration, select the desired type of data to be vizualised on top of widgets and boom🎉.  
 
 # Motivation for the project:
 
-Blockchains produce a lot of data that gets indexed and is sitting on chain. This data is not yet being analysed across dapps and chains to create insights for users, developers and investors. 
+With the rise of data anaytlics dashboards and tech bheind it was lacking innovation on how data is reperseted so the idea of showing on-chain data right away on our phone's widget willl help the users and  decerases the fricition while usimg such dashboards.
 
 We would like to analyse the data available on chain by creating relations across dapps and chains to create insights.
 
