@@ -28,15 +28,13 @@ We would like to analyse the data available on chain by creating relations acros
 
 # Overview for the project:
 
-Our platform allows users to view live feeds from multiple aggregators on NFTs, live updates, and more. Our goal is to provide the most comprehensive and up-to-date information on the widget market.
+Our platform allows users to view live feeds from multiple aggregators on NFTs, live updates, and more. Our goal is to provide the information in the most easiest and up-to-date on the widget market with easy to show steps.
 
-Our user-friendly interface allows you to easily search for specific widgets or browse through our catalog. You can also set up alerts to receive notifications when new widgets become available or when prices change.
+Our user-friendly interface allows you to easily search for specific widgets or browse through our catalog. You can also set up alerts to receive push notifications when new widgets become available or when prices change.
 
 Our platform is constantly updating with new information from various aggregators, ensuring you have access to the latest and most accurate information on the widget market.
 
-In addition, we offer a secure marketplace where you can buy and sell NFTs with confidence. Our platform uses the latest encryption technology to keep your transactions safe and secure.
-
-Join the Widget Market Place today and stay up-to-date on the latest developments in the world of widgets.
+Join the Widget Place today and stay up-to-date on the latest developments in the world of widgets.
 
 # Challenges we ran into
 
