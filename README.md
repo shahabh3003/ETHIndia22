@@ -12,11 +12,7 @@
 <img width="341" alt="Screenshot 2022-12-04 at 7 38 15 AM" src="https://user-images.githubusercontent.com/98009279/205471710-518635cf-69f5-4bce-a54f-a10e06b2bb4c.png">
 <img width="341" alt="Screenshot 2022-12-04 at 7 38 03 AM" src="https://user-images.githubusercontent.com/98009279/205471712-8801ff1b-a707-433d-b434-b223d56f0b9f.png">
 
-
-####  Click on the image above to watch the demo
-
 # Instructions to run application:
-
 
 1. Download & Install XCode
 2. Git clone this repository
@@ -31,15 +27,15 @@ We would like to analyse the data available on chain by creating relations acros
 
 # Overview for the project:
 
-Nonagon is an Analytics dashboard for browsing, discovering, analysing and consuming on chain raw data in the form of information and insights. 
+Our platform allows users to view live feeds from multiple aggregators on NFTs, live updates, and more. Our goal is to provide the most comprehensive and up-to-date information on the widget market.
 
-Covalent provides a unified API bringing visibility to billions of Web3 data points, by providing the richest and most robust data infrastructure for the entire Blockchain ecosystem.
+Our user-friendly interface allows you to easily search for specific widgets or browse through our catalog. You can also set up alerts to receive notifications when new widgets become available or when prices change.
 
-We are using covalent apis for retreiving data and then creating relations between web3 dapps across multiple evm chains and providing insights to users into the kind of projects that are being used currently and how the users of Project A are also using Projects B, C and D. This allows users to be aware of their actions and gives them insights into the projects they could also potentially use. 
+Our platform is constantly updating with new information from various aggregators, ensuring you have access to the latest and most accurate information on the widget market.
 
-Another aspect to the use case is we can also let developers unlimit themselves and become aware of the actions and insights of their users and their behaviour.
+In addition, we offer a secure marketplace where you can buy and sell NFTs with confidence. Our platform uses the latest encryption technology to keep your transactions safe and secure.
 
-Investors can also use the analytics dashboard to gain insights into the currencies to swap into, nfts and dapps to invest their funds in and cross chain analytics on popular dapps. 
+Join the Widget Market Place today and stay up-to-date on the latest developments in the world of widgets.
 
 # Challenges we ran into
 
