@@ -1,15 +1,18 @@
 # ETHIndia22
-# Decagon
+# Octagon
 
-
-
-[![Nonagon](https://github.com/yuvaraj-06/Nonagon/blob/main/logo.png?raw=true)](https://github.com/yuvaraj-06/Nonagon/blob/main/logo.png?raw=true)
+<img width="639" alt="Screenshot 2022-12-04 at 8 10 10 AM" src="https://user-images.githubusercontent.com/98009279/205471658-f1bf1964-f94e-4e48-8445-0485ca012b69.png">
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
-
 # Project Demo
 
 
-[![Cross Chain Analytics](https://assets.devfolio.co/hackathons/92aad02596384660a3f09b606d311ee7/projects/938c7774a8544c1cb8ab6503395d7c3c/bad0a071-eebd-4227-9fb7-6f2dd6d21ffa.png)](https://youtu.be/smjalXyNptU "Cross Chain Analytics")
+<img width="150" src="https://github.com/shahabh3003/ETHIndia22/blob/hero/assets/Simulator%20Screen%20Shot%20-%20iPhone%2014%20Pro%20-%202022-12-04%20at%2007.40.39.png">
+
+<img width="161" alt="Screenshot 2022-12-04 at 7 38 42 AM" src="https://user-images.githubusercontent.com/98009279/205471704-5f07519c-3565-4fb4-a564-ccefb8f662e0.png">
+<img width="341" alt="Screenshot 2022-12-04 at 7 38 15 AM" src="https://user-images.githubusercontent.com/98009279/205471710-518635cf-69f5-4bce-a54f-a10e06b2bb4c.png">
+<img width="341" alt="Screenshot 2022-12-04 at 7 38 03 AM" src="https://user-images.githubusercontent.com/98009279/205471712-8801ff1b-a707-433d-b434-b223d56f0b9f.png">
+
+
 ####  Click on the image above to watch the demo
 
 # Instructions to run application:
@@ -45,20 +48,12 @@ A potential way make analysis easier and better with indexed data is by onboardi
 
 # Tech stack and Modules used:
 
-   <b> Website: </b> Django ,REST APIs 
+   <b> IOS App: </b> SwiftUI, XCode 
    
    <b> Blockchains Supported: </b>  ETH,BSC,FANTOM,POLYGON,
    
-   <b> API : </b>  Covalent APIs
-   
-   <b> Machine Learning : </b>  Data Mining Techniques , Pandas
-   
- 
-# Overview of Website:
+   <b> API : </b>  Covalent APIs, Dune API, Graph API, Push Api
 
-<img src="mocks/1.png">
-<img src="mocks/2.png">
-<img src="mocks/3.png">
 
 
 
