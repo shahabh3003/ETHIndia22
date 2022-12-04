@@ -7,7 +7,7 @@
 # Project Demo
 
 
-<img width="300" src="https://github.com/shahabh3003/ETHIndia22/blob/hero/assets/Simulator%20Screen%20Shot%20-%20iPhone%2014%20Pro%20-%202022-12-04%20at%2007.40.39.png">
+<img width="300" src="https://github.com/shahabh3003/ETHIndia22/blob/hero/Simulator%20Screen%20Shot%20-%20iPhone%2014%20Pro%20-%202022-12-04%20at%2007.40.39.png?raw=true">
 
 <img width="161" alt="Screenshot 2022-12-04 at 7 38 42 AM" src="https://user-images.githubusercontent.com/98009279/205471704-5f07519c-3565-4fb4-a564-ccefb8f662e0.png">
 <img width="341" alt="Screenshot 2022-12-04 at 7 38 15 AM" src="https://user-images.githubusercontent.com/98009279/205471710-518635cf-69f5-4bce-a54f-a10e06b2bb4c.png">
