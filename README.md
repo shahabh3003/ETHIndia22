@@ -27,7 +27,7 @@
 
 # Motivation for the project:
 
-With the rise of data anaytlics dashboards and tech bheind it was lacking innovation on how data is reperseted so the idea of showing on-chain data right away on our phone's widget willl help the users and  decerases the fricition while usimg such dashboards.
+With the rise of data anaytlics dashboards and tech behind it was lacking innovation on how data is represented so the idea of showing on-chain data right away on our phone's widget will help the users and  decreases the friction while using such dashboards.
 
 We would like to analyse the data available on chain by creating relations across dapps and chains to create insights.
 
@@ -43,16 +43,18 @@ Join the Widget Place today and stay up-to-date on the latest developments in th
 
 # Challenges we ran into
 
-We are using covalent apis to get indexed data but the api latency is extremely high due to which we are unable to do real-time wallet and dapp address analysis and thus had to pivot to csv which allows for faster data analysis with better performance, relations and insights. The data present in the apis is also limited and allows for very less information, insights and analytics to be created. 
-A potential way make analysis easier and better with indexed data is by onboarding individual dapps and currencies to the platform using sub graphs, index that data in our own databaes and create relations and aggregated data on top of that to create better insights.
+We are using covalent apis to get indexed data but the api latency is extremely high due to which we are unable to do real-time wallet and dapp address analysis and thus had to pivot to csv which allows for faster data analysis with better performance, relations and insights. The data present in the apis is also limited and allows for very less information, insights and analytics to be created. A potential way make analysis easier and better with indexed data is by onboarding individual dapps and currencies to the platform using sub graphs, index that data in our own databaes and create relations and aggregated data on top of that to create better insights.
 
 # Tech stack and Modules used:
 
-   <b> IOS App: </b> SwiftUI, XCode 
+   <b> IOS App: </b> <img width="150" src="https://cdn.neowin.com/news/images/uploaded/2020/11/1606390918_rmktz63wonvr2jf4eibvooq2aas_story.jpg">
+   <img width="100" src="https://developer.apple.com/design/human-interface-guidelines/foundations/app-icons/images/app-icon-realistic-materials_2x.png" >
    
    <b> Blockchains Supported: </b>  ETH,BSC,FANTOM,POLYGON,
    
-   <b> API : </b>  Covalent APIs, Dune API, Graph API, Push Api
+   <b> API : </b>  <img width="150" src="https://miro.medium.com/max/1400/0*n_gKYARwgB42mG6c.png" >
+   <img width="150" src="https://app.ashbyhq.com/api/images/org-theme-wordmark/929bd50e-6019-4373-bc86-477080ad08ce/a43fc24c-0740-43ae-a090-934b67a52597.png" >
+   <img width="150" src="https://cdn-images-1.medium.com/max/470/1*Q9Sp33ZEP120iVD25eV3OA@2x.png" >
 
 
 
